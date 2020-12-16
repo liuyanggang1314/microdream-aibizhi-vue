@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <van-nav-bar title="标题" left-text="返回" right-text="按钮" left-arrow @click-left="onClickLeft"
-                 @click-right="onClickRight"/>
+    <router-view v-wechat-title="$route.meta.title"/>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {}
+  },
+  methods: {}
 }
 </script>
 
 <style>
+.category-view {
+  position: relative;
+}
 
+.category {
+  position: absolute;
+  bottom: 4px;
+  left: 2px;
+  color: white;
+}
 </style>
