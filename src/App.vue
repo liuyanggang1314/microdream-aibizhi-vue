@@ -25,5 +25,6 @@ export default {
   bottom: 4px;
   left: 2px;
   color: white;
+  font-size: 4vw;
 }
 </style>
